@@ -6,12 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StopWatch</title>
 
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    
+    <main>
+        <div class="timeScreen">
+            <div class="hour">00</div>
+            <span>:</span>
+            <div class="minute">00</div>
+            <span>:</span>
+            <div class="second">00</div>
+            <span>.</span>
+            <div class="milis">00</div>
+        </div>
+        <div class="buttons">
+            <div class="start_puase" onclick="start(this)">
+                <i class="bi bi-play-fill"></i>
+                <!-- <i class="bi bi-pause"></i> -->
+            </div>
+            <div class="flag" onclick="flag()"><i class="bi bi-flag"></i></div>
+            <div class="reset" onclick="reset()"><i class="bi bi-arrow-clockwise"></i></div>
+        </div>
+        <div class="recordFeed">
+            <div class="tags">
+                <div class="col-4">Lap</div>
+                <div class="col-4">Time</div>
+                <div class="col-4">Total</div>
+            </div>
+            <div class="record">
+
+            </div>
+        </div>
+    </main>
 </body>
 <script src="master.js"></script>
 </html> 
