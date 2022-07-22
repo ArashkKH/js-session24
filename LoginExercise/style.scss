@@ -4,13 +4,16 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgb(229,122,68);
+    background: linear-gradient(69deg, rgba(229,122,68,1) 0%, rgba(66,32,64,1) 100%);
+
     >div{
         width: 50%;
         height: 400px;
         border-radius: 20px;
         box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.541);
         padding: 40px;
-        background: rgb(253, 255, 158);
+        background: #fdff9e;
         .Inputs{
             display: flex;
             flex-direction: column;
